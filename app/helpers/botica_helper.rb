@@ -1,0 +1,2 @@
+module BoticaHelper
+end

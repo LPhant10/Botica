@@ -1,0 +1,2 @@
+class BoticaController < ApplicationController
+end

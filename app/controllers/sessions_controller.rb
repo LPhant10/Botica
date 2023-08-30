@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
 
     if user && user.authenticate(params[:session][:password])
       session[:user_id] = user.id
-      redirect_to dashboard_path # Cambia esto a la ruta correcta de tu dashboard
+      redirect_to botica_inicio_path # Redirige a la nueva interfaz en BoticaController
     else
       flash.now[:alert] = 'Invalid email or password'
       render 'new'
