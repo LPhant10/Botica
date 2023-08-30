@@ -73,3 +73,6 @@ end
 
 
 #gemas
+
+gem 'bcrypt' 
+gem 'pg', '>= 0.18', '< 2.0'
