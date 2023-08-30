@@ -12,7 +12,7 @@ class UsersController < ApplicationController
       render :new
     end
   end
-
+##el terror de las venecas
   private
 
   def user_params
