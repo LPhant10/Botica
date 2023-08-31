@@ -23,6 +23,9 @@ Rails.application.routes.draw do
   # Ruta para cambiar el idioma
   post '/set_locale', to: 'application#set_locale', as: :set_locale
 
+  # Ruta para productos
+  post '/productos', to: 'productos#create', as: :productos
+
   # Define other application routes per your requirements
 
   # Defines the root path route ("/")
