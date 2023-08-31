@@ -1,2 +1,15 @@
-<h1>Bienvenido a tu interfaz después de iniciar sesión</h1>
-<p>Esta es la página de inicio personalizada para los usuarios que han iniciado sesión.</p>
+<h1>BOTICA "MATA SANOS"</h1>
+
+<p><%= t :welcome_user, user_email: session[:user_email] %></p>
+<ul>
+  <li><%= link_to t(:inventory), inventario_path %></li>
+  <li><%= link_to t(:sales), ventas_path %></li>
+  <li><%= link_to t(:customers), clientes_path %></li>
+  <li><%= link_to t(:providers), proveedores_path %></li>
+  <li><%= link_to t(:reports), reportes_path %></li>
+  <li><%= link_to t(:search), buscar_path %></li>
+</ul>
+
+<%= form_with url: logout_path, method: :delete do |f| %>
+  <%= f.submit t(:logout) %>
+<% end %>

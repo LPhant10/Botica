@@ -1,0 +1,16 @@
+# config/locales/es.yml
+es:
+  home: INICIO
+  welcome_user: ¡Bienvenido/a, %{user_email}!
+  inventory: Inventario
+  sales: Ventas
+  customers: Clientes
+  providers: Proveedores
+  reports: Reportes
+  search: Buscar
+  logout: Cerrar Sesión
+
+  # Traducciones para el menú de cambio de idioma
+  locale:
+    en: Inglés
+    es: Español

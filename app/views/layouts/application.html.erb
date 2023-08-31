@@ -12,14 +12,18 @@
 
   <body>
     <nav>
+      <%= form_tag set_locale_path, method: :post do %>
+        <%= select_tag :locale, options_for_select(I18n.available_locales.map { |locale| [t("locale.#{locale}"), locale] }, session[:locale]), onchange: "this.form.submit();" %>
+      <% end %>
+
       <ul>
-        <li><%= link_to "INICIO", root_path %></li>
-        <li><%= link_to "LOGIN", login_path %></li>
-        <li><%= link_to "REGISTRO", new_user_path %></li>
+        <li><%= link_to t(:home), root_path %></li>
+        <li><%= link_to t(:login), login_path %></li>
+        <li><%= link_to t(:register), new_user_path %></li>
         <!-- Otros elementos de navegación aquí -->
       </ul>
     </nav>
-             
+
     <%= yield %>
   </body>
 </html>
