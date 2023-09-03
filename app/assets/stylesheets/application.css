@@ -36,3 +36,13 @@
     }
   }
   
+
+
+
+  body {
+    background-image: url('https://img.freepik.com/foto-gratis/resumen-borroso-defocused-farmacia-farmacia_1203-9459.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100vh; /* Ajusta la imagen al tamaño del viewport */
+    background-attachment: fixed; /* Fija la imagen para que no se desplace con el contenido */
+  }
+  

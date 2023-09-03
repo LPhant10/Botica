@@ -76,3 +76,4 @@ end
 
 gem 'bcrypt' 
 gem 'pg', '>= 0.18', '< 2.0'
+gem 'devise'
